@@ -12,8 +12,8 @@ import java.util.ArrayList;
  * @author Paulo Vinícius
  */
 public class Party {
-    ArrayList<Personagem> personagens = new ArrayList<Personagem>(); // ArrayList contendo os 4 personagens
-    ArrayList<Item> itens = new ArrayList<Item>();                   // ArrayList contendo os 100 itens possíveis
+    ArrayList<Personagem> personagens = new ArrayList<>(); // ArrayList contendo os 4 personagens
+    ArrayList<Item> itens = new ArrayList<>();             // ArrayList contendo os 100 itens possíveis
     
     /**
      * Construtor de Party
@@ -58,9 +58,17 @@ public class Party {
         }
     }
     
+    /**
+     * Remove o item da Party a partir do nome enviado.
+     * @param nome Nome do item a ser removido.
+     */
     public void removeItem(String nome) {
         for(Item i : itens) {
-            if(i.)
+            if(i.getNome().equals(nome)) {
+                itens.remove(itens.indexOf(i));
+            } else {
+                System.out.println("Item não encontrado.");
+            }
         }
     }
 }

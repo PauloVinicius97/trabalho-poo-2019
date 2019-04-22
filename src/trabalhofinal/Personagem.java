@@ -19,6 +19,9 @@ package trabalhofinal;
 public abstract class Personagem {
     private String nome;
     private int hp, strength, defense;
+    private Arma armaEquipada;
+    private Armadura armaduraEquipada;
+    private Acessorio acessorioEquipado;
     
     public String getNome() {
         return nome;
