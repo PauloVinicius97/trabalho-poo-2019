@@ -3,13 +3,13 @@
  * IFRS - TADS - OO - 2019/1
  * Trabalho Final da Cadeira
  */
-package trabalhofinal;
+package trabalhofinal.Itens;
 
 /**
  * Classe Abstrata Item, contendo informações como o nome do item e sua descrição.
  * @author Paulo Vinícius
  */
-public class Item {
+public abstract class Item {
     private String nome, descricao;
 
     /**
@@ -37,8 +37,8 @@ public class Item {
      * Converte os atributos do Item para uma String.
      * @return String contendo dados dos atributos do item.
      */
+    @Override
     public String toString() {
-        return "===========/nNome do item: " + nome + "\nDescrição do item: " + descricao + "\n===========";
+        return "\nNome: " + nome + "\nDescrição: " + descricao;
     }
-    
 }

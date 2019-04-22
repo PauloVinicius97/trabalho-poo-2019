@@ -4,6 +4,7 @@
  * Trabalho Final da Cadeira
  */
 package trabalhofinal;
+import trabalhofinal.Itens.Item;
 import java.util.ArrayList;
 
 /**
